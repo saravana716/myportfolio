@@ -65,13 +65,13 @@ const MyProfile = () => {
         </a> 
         </div>
         <div className='myprofile1'>
-            <div className='myimages' onClick={gotoabout}>
+            <div className='myimages'>
 <img src={Myimage} alt="" />
-<h1>ABOUT</h1>
+<h1 onClick={gotoabout}>ABOUT</h1>
             </div>
             <div className='mydata'>
                 <div className='mydata1'>
-                    <div className='Blog' onClick={gotoportfolio}>
+                    <div className='Blog'>
                         <div className='title'>
    <h2><GoDotFill className='icon' />buzz burst</h2>
 
@@ -79,9 +79,9 @@ const MyProfile = () => {
     <div className='imgbox'>
 <img src={Myimage1} alt="" />
     </div>
-    <h1>PORTFOLIO</h1>
+    <h1 onClick={gotoportfolio}>PORTFOLIO</h1>
                     </div>
-                    <div className='Education' onClick={gotoedu}>
+                    <div className='Education'>
                     <div className='title'>
                     <h2><GoDotFill className='icon' />buzz burst</h2>
                     </div>
@@ -97,12 +97,12 @@ const MyProfile = () => {
                         <MdOutlineSchool className='ic1' />
                         </div>
                     </div></div>
-    <h1>EDUCATION</h1>
+    <h1 onClick={gotoedu}>EDUCATION</h1>
 
                     </div>
                 </div>
                 <div className='mydata2'>
-                    <div className='portfolio' onClick={gotoskills}>
+                    <div className='portfolio'>
                     <div className='title'>
    <h2><GoDotFill className='icon' />buzz burst</h2>
 
@@ -112,10 +112,10 @@ const MyProfile = () => {
                                 <img src={Myimage2} alt="" />
                             </div>
                         </div>
-    <h1>SKILLS</h1>
+    <h1 onClick={gotoedu}>SKILLS</h1>
 
                     </div>
-                    <div className='contact' onClick={gotocontact}>
+                    <div className='contact'>
                     <div className='title'>
    <h2><GoDotFill className='icon' />buzz burst</h2>
 
@@ -124,7 +124,7 @@ const MyProfile = () => {
 <div className='sr'>
    <img src={Myimage3} alt="" />
     </div> </div>
-  <h1>Hire Me</h1>
+  <h1 onClick={gotocontact}>Hire Me</h1>
 
                     </div>
                 </div>
