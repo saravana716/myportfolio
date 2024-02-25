@@ -112,7 +112,7 @@ const MyProfile = () => {
                                 <img src={Myimage2} alt="" />
                             </div>
                         </div>
-    <h1 onClick={gotoedu}>SKILLS</h1>
+    <h1 onClick={gotoskills}>SKILLS</h1>
 
                     </div>
                     <div className='contact'>
