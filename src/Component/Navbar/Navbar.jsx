@@ -29,7 +29,8 @@ const Navbar = () => {
             <h1>SARAVANAPRIYAN.</h1>
             <div className='list'>
            <div className='list1'>
-           <Link to="/"><h4 className='active'>Home</h4></Link>
+    
+           <Link to="/home"><h4 className='active'>Home</h4></Link>
             <Link to="/about"><h4>About Me</h4></Link>
             <Link to="/portfolio"><h4>Portfolio</h4></Link>
             <Link to="/skills"><h4>Skills</h4></Link>

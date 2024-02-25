@@ -6,13 +6,15 @@ import MyProtfolio from '../Component/myPortfolio/MyProtfolio'
 import Skills from '../Component/Skills/Skills'
 import Education from '../Component/Education/Education'
 import Contact from '../Component/Contact/Contact'
+import Loader from '../Component/loader/Loader'
 
 const Roters = () => {
   return (
     <>
     <BrowserRouter>
     <Routes>
-        <Route path='/' element={<MyProfile />}/>
+        <Route path='/' element={<Loader />}/>
+        <Route path='/home' element={<MyProfile />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/Portfolio' element={<MyProtfolio />}/>
         <Route path='/skills' element={<Skills />}/>
