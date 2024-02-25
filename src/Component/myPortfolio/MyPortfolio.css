@@ -1,0 +1,548 @@
+.mywebsite{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.mywebsite1{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.myphoto{
+    width: 100%;
+    height: 140%;
+    background: url("../IMG_20240223_155412.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px 0px;
+}
+.myphoto1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.myphoto1 h1{
+    font-family: "Anta", sans-serif;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 85px;
+    letter-spacing: 5px;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+animation: moves 10s linear infinite;
+}
+@keyframes moves {
+ 0%{
+    background-position:0;
+ }   
+ 100%{
+    background-position: 400%;
+
+ }
+}
+
+.myphoto1 h5{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    top: 55%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -26%);
+
+}
+.mysitesss{
+    width: 100%;
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mysite{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 20px 0px;
+}
+.mysite1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-gap: 40px;
+}
+.mysite2{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #2f3035;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.7s;
+}
+.mysite2::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: hsl(212, 100%, 42%,0.4);
+    z-index: 9;
+    transform:scale(1);
+    border-radius: 10px;
+    transition: 0.7s;
+}
+.mysite2:hover::before{
+    transform: scale(0);
+    }
+.mysite2:hover{
+    border:  2px solid #0064d8;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.slide1{
+    width: 100%;
+    height: 250px;
+    display: flex;
+   
+    display: grid;
+    grid-template-columns: repeat(8,100%);
+    overflow: hidden;
+    border-radius: 10px;
+}
+.slide1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: scroll123 10s infinite;
+
+}
+@keyframes scroll123 {
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
+.protitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.protitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+}
+.protitle h1 .icon,h3 .icon{
+     color: #0064d8;
+}
+.protitle h1,h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.protitle h1{
+    font-size: 18px;
+}
+
+.slide button{
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    background-color: #2f3035;
+    border: 2px solid gray;
+    transition: 0.7s;
+}
+.slide button h6{
+    width: 100%;
+    height: 100%;
+    background-color:#111217;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    padding: 6px 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+
+}
+.slide button h6::before{
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-color: #0064d8;
+    position: absolute;
+    border-radius: 100%;
+    left: -20%;
+    transition: 1s;
+    z-index: -1;
+}
+.slide button h6::after{
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-color: #0064d8;
+    color: white;
+    position: absolute;
+    border-radius: 100%;
+    right: -20%;
+    transition: 1s;
+    z-index: -1;
+}
+.slide button h6:hover::after{
+    height: 300px;
+    width: 700px;
+    right: 40%;
+    
+}
+.slide button h6:hover::before{
+    left: 40%;
+    width: 700px;
+    height: 300px;
+}
+.slide button:hover{
+    border: 2px solid #0064d8;
+}
+.mywebsite h4{
+    color: white;
+    padding-left: 20px;
+    transition: 0.7s;
+}
+@media screen and (max-width: 768px){
+    .mywebsite{
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        padding: 20px 20px;
+      
+    }
+    .mywebsite1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .myphoto{
+        width: 100%;
+        height: 100%;
+        background: url("../IMG_20240223_155412.jpg");
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 30px 0px;
+    }
+    .myphoto1{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(5, 5, 5, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .myphoto1 h1{
+        font-family: "Anta", sans-serif;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+        font-size: 35px;
+        letter-spacing: 5px;
+        background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-size: 400%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    animation: moves 10s linear infinite;
+    }
+    @keyframes moves {
+     0%{
+        background-position:0;
+     }   
+     100%{
+        background-position: 400%;
+    
+     }
+    }
+    
+    .myphoto1 h5{
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        position: absolute;
+        font-family: "Sacramento", cursive;
+        font-weight: 400;
+        font-style: normal;
+        top: 55%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -26%);
+    
+    }
+    .mysitesss{
+        width: auto;
+        height: auto; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .mysite{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        padding: 0px 0px;
+    }
+    .mysite1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1,6fr);
+        grid-gap: 40px;
+    }
+    .mysite2{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border: 2px solid #2f3035;
+        border-radius: 10px;
+        position: relative;
+        transition: 0.7s;
+    }
+    .mysite2::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: hsl(212, 100%, 42%,0.4);
+        z-index: 9;
+        transform:scale(1);
+        border-radius: 10px;
+        transition: 0.7s;
+    }
+    .mysite2:hover::before{
+        transform: scale(0);
+        }
+    .mysite2:hover{
+        border:  2px solid #0064d8;
+    }
+    .slide{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .slide1{
+        width: 100%;
+        height: 250px;
+        display: flex;
+       
+        display: grid;
+        grid-template-columns: repeat(8,100%);
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .slide1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        animation: scroll123 10s infinite;
+    
+    }
+    @keyframes scroll123 {
+        0%{
+            transform: translateX(0%);
+        }
+        25%{
+            transform: translateX(-100%);
+        }
+        50%{
+            transform: translateX(-200%);
+        }
+        75%{
+            transform: translateX(-300%);
+        }
+        100%{
+            transform: translateX(-400%);
+        }
+    }
+    .protitle{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .protitle{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        margin-top: 20px;
+    }
+    .protitle h1 .icon,h3 .icon{
+         color: #0064d8;
+    }
+    .protitle h1,h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .protitle h1{
+        font-size: 18px;
+    }
+    
+    .slide button{
+        padding: 5px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        margin-top: 20px;
+        background-color: #2f3035;
+        border: 2px solid gray;
+        transition: 0.7s;
+    }
+    .slide button h6{
+        width: 100%;
+        height: 100%;
+        background-color:#111217;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        border-radius: 50px;
+        padding: 6px 30px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        z-index: 1;
+        color: white;
+    
+    }
+    .slide button h6::before{
+        width: 20px;
+        height: 20px;
+        content: "";
+        background-color: #0064d8;
+        position: absolute;
+        border-radius: 100%;
+        left: -20%;
+        transition: 1s;
+        z-index: -1;
+    }
+    .slide button h6::after{
+        width: 20px;
+        height: 20px;
+        content: "";
+        background-color: #0064d8;
+        color: white;
+        position: absolute;
+        border-radius: 100%;
+        right: -20%;
+        transition: 1s;
+        z-index: -1;
+    }
+    .slide button h6:hover::after{
+        height: 300px;
+        width: 700px;
+        right: 40%;
+        
+    }
+    .slide button h6:hover::before{
+        left: 40%;
+        width: 700px;
+        height: 300px;
+    }
+    .slide button:hover{
+        border: 2px solid #0064d8;
+    }
+    .mywebsite h4{
+        color: white;
+        padding-left: 20px;
+        transition: 0.7s;
+    }
+   
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Sacramento&display=swap')

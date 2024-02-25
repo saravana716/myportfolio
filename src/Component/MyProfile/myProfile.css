@@ -1,0 +1,831 @@
+.myprofile{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.links{
+    background-color: #111217;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #393a3f;
+    transition: 0.7s;
+}
+.links:hover {
+    border: 2px solid #0064d8;
+}
+.links span{
+background-color: gainsboro;
+margin: 10px;
+padding: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+transition: 0.7s;
+}
+.links span:hover{
+    background-color: #36373c;
+    color: white;
+}
+span .socialmedia{
+    font-size: 12px;
+}
+
+.myprofile1{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.myimages{
+    width: 35%;
+    height: 90%;
+    border-radius: 30px;
+    position: relative;
+}
+.myimages img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.myimages h1{
+    font-size: 40px;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    padding: 15px 20px;
+    border-radius: 40px;
+    color: white;
+  border: 1px solid #1a1b20;
+    transition: 0.7s;
+    color: gray;
+    letter-spacing: 4px;
+}
+.myimages h1:hover{
+    background-color: #1a1b20;
+    border: 1px solid #2f3035;
+    color: white;
+    box-shadow:  0px 0px 0px 1px white;
+}
+.mydata{
+    width: 100%;
+    height: 90%;
+    padding: 0px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.mydata2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    padding-right: 0px;
+}
+.mydata2 img{
+    width: 50px;
+}
+
+.mydata1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mydata1 .Blog{
+    width: 45%;
+    height: 100%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 20px;
+    padding: 0px 0px;
+    transition: 0.7s;
+}
+.Blog .title{
+width: 100%;
+height: auto;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding-left: 0px;
+padding: 20px 20px;
+}
+.title h2{
+    padding: 10px 6px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: gainsboro;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    }
+.title h2 p{
+    font-size: 50px;
+}
+.title h2 .icon{
+    color:  #0064d8;
+    margin-right: 10px;
+}
+.Blog .imgbox{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+.imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.7s;
+}
+.imgbox img:hover{
+    transform: scale(1.2);
+}
+.mydata1 .Education{
+    width: 100%;
+}
+.Blog h1{
+    font-size: 18px;
+    text-align: start;
+    color: gainsboro;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 0px;
+    letter-spacing: 6px;
+}
+.Blog:hover{
+    border: 2px solid #0064d8;
+}
+.mydata1 .Education{
+    width: 100%;
+    height: 100%;
+    margin-right: 0px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 20px;
+    padding: 0px 0px;
+    transition: 0.7s;
+}
+.Education h1{
+    font-size: 18px;
+    text-align: start;
+    color: gainsboro;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 0px;
+    letter-spacing: 6px;
+}
+.Education:hover{
+    border: 2px solid #0064d8;
+}
+.ed{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edu{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 50px;
+   
+}
+.edu1{
+    width: 85%;
+    height: auto;
+    background:linear-gradient(#393a3f,#121317);
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid #0064d8;
+}
+.edu1 .ic1{
+    font-size: 65px;
+    color: rgb(133, 132, 132);
+    font-weight: normal;
+    transition: 0.7s;
+}
+.Education .title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px;
+    padding: 20px 20px;
+}
+.Education:hover .ic1{
+transform: rotate(360deg);
+}
+.mydata2 .portfolio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0px;
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 20px;
+    transition: 0.7s;
+}
+.portfolio title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px;
+    padding: 20px 20px;
+}
+.contact title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px;
+    padding: 20px 20px;
+}
+.portfolio .title h2{
+    padding: 10px 6px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: gainsboro;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+.portfolio .skills{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills .skills1{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background:linear-gradient(#393a3f,#121317);
+    transition: 0.7s;
+}
+.portfolio:hover .skills1{
+    animation: scroll 100s infinite;
+}
+@keyframes scroll {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(20000deg);
+    }
+}
+.skills1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.portfolio h1{
+    font-size: 18px;
+    text-align: start;
+    color: gainsboro;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 0px;
+    letter-spacing: 6px;
+}
+.contact h1{
+    font-size: 18px;
+    text-align: start;
+    color: gainsboro;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 0px;
+    letter-spacing: 6px;
+}
+.portfolio:hover{
+    border: 2px solid #0064d8;
+}
+.contact{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0px;
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 20px;
+    transition: 0.7s;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.contact .sr1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sr{
+    width: 40%;
+    height: 40%;
+    transition: 0.7s;
+}
+.sr img{
+    width: 100%;
+    height: 100%;
+}
+.contact:hover .sr{
+    transform: translate(150%,-260%);
+}
+.contact .title h2{
+    margin:20px
+}
+.contact:hover{
+    border: 2px solid #0064d8;
+}
+
+
+@media screen and (max-width: 768px){
+    .myprofile{
+        width: auto;
+        height: auto;
+        margin-top: 80px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .links{
+        background-color: #111217;
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: 2px solid #393a3f;
+        transition: 0.7s;
+        position: absolute;
+    }
+    .links:hover {
+        border: 2px solid #0064d8;
+    }
+    .links span{
+    background-color: gainsboro;
+    margin: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.7s;
+    }
+    .links span:hover{
+        background-color: #36373c;
+        color: white;
+    }
+    span .socialmedia{
+        font-size: 12px;
+    }
+    
+    .myprofile1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .myimages{
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        position: relative;
+    }
+    .myimages img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    .myimages h1{
+        font-size: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        padding: 5px 10px;
+        border-radius: 40px;
+        color: white;
+      border: 1px solid #1a1b20;
+        transition: 0.7s;
+        color: gray;
+        letter-spacing: 4px;
+    }
+    .myimages h1:hover{
+        background-color: #1a1b20;
+        border: 1px solid #2f3035;
+        color: white;
+        box-shadow:  0px 0px 0px 1px white;
+    }
+    .mydata{
+        width: 100%;
+        height: 100%;
+        padding: 0px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mydata2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 20px 0px;
+        padding-right: 0px;
+    }
+    .mydata2 img{
+        width: 50px;
+    }
+    
+    .mydata1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .mydata1 .Blog{
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 2px solid rgb(49, 49, 49);
+        border-radius: 20px;
+        padding: 0px 0px;
+        transition: 0.7s;
+    }
+    .Blog .title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px;
+    padding: 20px 20px;
+    }
+    .title h2{
+        padding: 10px 6px;
+        border-radius: 30px;
+        border: 1px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        color: gainsboro;
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-weight: 400;
+        }
+    .title h2 p{
+        font-size: 50px;
+    }
+    .title h2 .icon{
+        color:  #0064d8;
+        margin-right: 10px;
+    }
+    .Blog .imgbox{
+        width: 100%;
+        height:100%;
+        overflow: hidden;
+    }
+    .imgbox img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.7s;
+    }
+    .imgbox img:hover{
+        transform: scale(1.2);
+    }
+    .mydata1 .Education{
+        width: 100%;
+    }
+    .Blog h1{
+        font-size: 18px;
+        text-align: start;
+        color: gainsboro;
+        font-weight: 400;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 15px 20px;
+        margin-bottom: 0px;
+        letter-spacing: 6px;
+    }
+    .Blog:hover{
+        border: 2px solid #0064d8;
+    }
+    .mydata1 .Education{
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 2px solid rgb(49, 49, 49);
+        border-radius: 20px;
+        padding: 0px 0px;
+        transition: 0.7s;
+        margin-top: 20px;
+    }
+    .Education h1{
+        font-size: 18px;
+        text-align: start;
+        color: gainsboro;
+        font-weight: 400;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 15px 20px;
+        margin-bottom: 0px;
+        letter-spacing: 6px;
+    }
+    .Education:hover{
+        border: 2px solid #0064d8;
+    }
+    .ed{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .edu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1,3fr);
+        grid-column-gap: 50px;
+       
+    }
+    .edu1{
+        width: 100px;
+        height: 100px;
+        background:linear-gradient(#393a3f,#121317);
+        padding: 20px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        border-radius: 100%;
+        border: 2px solid #0064d8;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .edu1 .ic1{
+        font-size: 65px;
+        color: rgb(133, 132, 132);
+        font-weight: normal;
+        transition: 0.7s;
+    }
+    .Education .title{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 0px;
+        padding: 20px 20px;
+
+    }
+    .Education:hover .ic1{
+    transform: rotate(360deg);
+    }
+    .mydata2 .portfolio{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0px;
+        border: 2px solid rgb(49, 49, 49);
+        border-radius: 20px;
+        transition: 0.7s;
+    }
+    .portfolio title{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 0px;
+        padding: 20px 20px;
+    }
+    .contact title{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 0px;
+        padding: 20px 20px;
+    }
+    .portfolio .title h2{
+        padding: 10px 6px;
+        border-radius: 30px;
+        border: 1px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        color: gainsboro;
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-weight: 400;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+    .portfolio .skills{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills .skills1{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background:linear-gradient(#393a3f,#121317);
+        transition: 0.7s;
+    }
+    .portfolio:hover .skills1{
+        animation: scroll 100s infinite;
+    }
+    @keyframes scroll {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(20000deg);
+        }
+    }
+    .skills1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+    .portfolio h1{
+        font-size: 18px;
+        text-align: start;
+        color: gainsboro;
+        font-weight: 400;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 15px 20px;
+        margin-bottom: 0px;
+        letter-spacing: 6px;
+    }
+    .contact h1{
+        font-size: 18px;
+        text-align: start;
+        color: gainsboro;
+        font-weight: 400;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 15px 20px;
+        margin-bottom: 0px;
+        letter-spacing: 6px;
+    }
+    .portfolio:hover{
+        border: 2px solid #0064d8;
+    }
+    .contact{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0px;
+        border: 2px solid rgb(49, 49, 49);
+        border-radius: 20px;
+        transition: 0.7s;
+        margin-left: 0px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    .contact .sr1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sr{
+        width: 40%;
+        height: 40%;
+        transition: 0.7s;
+    }
+    .sr img{
+        width: 100%;
+        height: 100%;
+    }
+    .contact:hover .sr{
+        transform: translate(150%,-260%);
+    }
+    .contact .title h2{
+        margin:20px
+    }
+    .contact:hover{
+        border: 2px solid #0064d8;
+    }
+}

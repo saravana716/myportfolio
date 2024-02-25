@@ -1,0 +1,463 @@
+.myskills{
+    width: 100%;
+    height: 140%;
+    background: url("../12.JPEG");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* back */
+    margin: 30px 0px;
+}
+.myskills1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.myskills1 h1{
+    font-family: "Anta", sans-serif;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 85px;
+    /* color: white; */
+    letter-spacing: 5px;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+animation: moves 10s linear infinite;
+/* text-shadow: 1px 20px 15px black; */
+}
+@keyframes moves {
+ 0%{
+    background-position:0;
+ }   
+ 100%{
+    background-position: 400%;
+
+ }
+}
+
+.myskills1 h5{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    top: 55%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -26%);
+    /* color:#; */
+}
+.myskillset{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.myskillset1{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 40px;
+    /* background-color: green; */
+    padding: 20px 0px;
+}
+.myskillset2{
+    width: 100%;
+    /* background-color: aqua; */
+    /* box-shadow:  0 2px 8px 0 #0064d8; */
+    border: 1px solid #2f3035;
+    
+    border-radius: 10px;
+    /* height: ; */
+    padding: 20px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.7s;
+}
+.myskillset2:hover{
+    box-shadow:  0 2px 4px 0 #0064d8;
+    border: 1px solid #0064d8;
+    background-color: #14151a;
+}
+.myskillset2:hover .boxsize{
+    border: 1px solid #0064d8;
+    background-color: #14151a;
+    transform: rotate(360deg);
+}
+
+.myskillset2:hover button{
+    border: 1px solid #0064d8;
+    background-color: #14151a;
+}
+.myskillset2:hover ::after{
+    background-color: #14151a;
+    left: 125px;
+}
+.myskillset2:hover ::before{
+    width: 100px;
+}
+.myskillset2 button{
+    width:100%;
+    color: white;
+    background-color: #1a1b20;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 150px;
+    border-radius: 100px;
+    border: none;
+    position: relative;
+    transition: 0.7s;
+    overflow: hidden;
+    border: 1px solid #2f3035;
+
+}.myskillset2 button::before{
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 80%;
+    background-color:#0064d8;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    top: 8px;
+    right:8px;
+    overflow: hidden;
+    transition: 0.7s;
+}
+.myskillset2 button p{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 30%;
+    height: 120%;
+    background-color: #0064d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* border-top-right-radius: 60px; */
+}
+.myskillset2 button ::after{
+position: absolute;
+content: "";
+transition: 0.7s;
+width: 50px;
+height: 200px;
+background-color:#1a1b20;
+left: 100px;
+top: -50px;
+transform: rotate(-0deg);
+/* border-left: 2px solid black; */
+}
+.myskillset2 button p span{
+    /* background-color: rebeccapurple; */
+    padding-bottom: 10px;
+    margin-right: 35px;
+    font-size: 30px;
+}
+.boxsize{
+    width: 120px;
+    height: 120px;
+    border: 2px solid gray;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: 20px 0px;
+    border: 1px solid #2f3035;
+    transition: 0.7s;
+    /* padding: 20px; */
+}
+.boxsize1{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.boxsize1 img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 100%; */
+}
+.boxsize1 .js{
+    width: 70%;
+    height: 70%;
+}
+.boxsize1 .js1{
+    width: 70%;
+    height: 70%;
+    /* background-color: #0064d8; */
+}
+.myskillset2 p{
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px){
+    .myskills{
+        width: 100%;
+        height: 140%;
+        background: url("../12.JPEG");
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 30px 0px;
+        background-attachment: fixed;
+    }
+    .myskills1{
+        width: auto;
+        height: 100%;
+        background-color: rgba(5, 5, 5, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .myskills1 h1{
+        font-family: "Anta", sans-serif;
+    width: 100%;
+        position: absolute;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%, -50%);
+        font-size: 35px;
+        /* color: white; */
+        letter-spacing: 5px;
+        background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-size: 400%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    animation: moves 10s linear infinite;
+    /* text-shadow: 1px 20px 15px black; */
+    }
+    @keyframes moves {
+     0%{
+        background-position:0;
+     }   
+     100%{
+        background-position: 400%;
+    
+     }
+    }
+    
+    .myskills1 h5{
+        width: 100%;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        position: absolute;
+        font-family: "Sacramento", cursive;
+        font-weight: 400;
+        font-style: normal;
+        top: 55%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -26%);
+        /* color:#; */
+    }
+    .myskillset{
+        width: auto;
+        padding: 20px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red;/ */
+    }
+    .myskillset1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-gap: 0px;
+        grid-row-gap: 40px;
+        /* background-color: green; */
+        padding: 20px 0px;
+    }
+    .myskillset2{
+        width: 100%;
+        height: auto;
+        /* background-color: aqua; */
+        /* box-shadow:  0 2px 8px 0 #0064d8; */
+        border: 1px solid #2f3035;
+        
+        border-radius: 10px;
+        /* height: ; */
+        padding: 20px 20px;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        transition: 0.7s;
+    }
+    .myskillset2:hover{
+        box-shadow:  0 2px 4px 0 #0064d8;
+        border: 1px solid #0064d8;
+        background-color: #14151a;
+    }
+    .myskillset2:hover .boxsize{
+        border: 1px solid #0064d8;
+        background-color: #14151a;
+        transform: rotate(360deg);
+    }
+    
+    .myskillset2:hover button{
+        border: 1px solid #0064d8;
+        background-color: #14151a;
+    }
+    .myskillset2:hover ::after{
+        background-color: #14151a;
+        left: 60px;
+    }
+    .myskillset2:hover ::before{
+        width: 40px;
+    }
+    .myskillset2 button{
+        width:100%;
+        color: white;
+        background-color: #1a1b20;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 100px;
+        border-radius: 100px;
+        border: none;
+        position: relative;
+        transition: 0.7s;
+        overflow: hidden;
+        padding-right: 50px;
+        border: 1px solid #2f3035;
+    
+    }.myskillset2 button::before{
+        position: absolute;
+        content: "";
+        width: 10%;
+        height: 80%;
+        background-color:#0064d8;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        top: 8px;
+        right:8px;
+        overflow: hidden;
+        transition: 0.7s;
+    }
+    .myskillset2 button p{
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 35%;
+        height: 120%;
+        background-color: #0064d8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        /* border-top-right-radius: 60px; */
+    }
+    .myskillset2 button ::after{
+    position: absolute;
+    content: "";
+    transition: 0.7s;
+    width: 30px;
+    height: 200px;
+    background-color:#1a1b20;
+    left: 70px;
+    top: -50px;
+    transform: rotate(-0deg);
+    }
+    .myskillset2 button p span{
+        padding-bottom: 10px;
+        margin-right: 35px;
+        font-size: 30px;
+    }
+    .boxsize{
+        width: 120px;
+        height: 120px;
+        border: 2px solid gray;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        margin: 20px 0px;
+        border: 1px solid #2f3035;
+        transition: 0.7s;
+        /* padding: 20px; */
+    }
+    .boxsize1{
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+    }
+    .boxsize1 img{
+        width: 100%;
+        height: 100%;
+        /* border-radius: 100%; */
+    }
+    .boxsize1 .js{
+        width: 70%;
+        height: 70%;
+    }
+    .boxsize1 .js1{
+        width: 70%;
+        height: 70%;
+        /* background-color: #0064d8; */
+    }
+    .myskillset2 p{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: justify;
+        color: white;
+    }
+    
+}
