@@ -3,8 +3,12 @@ import "./About.css"
 import Myimage8 from "../1708772584047.JPEG"
 import { GoDotFill } from "react-icons/go";
 import Navbar from '../Navbar/Navbar';
-
+import { useNavigate } from 'react-router-dom';
 const About = () => {
+    const resumenavigate=useNavigate()
+    function gotoresume(params) {
+        resumenavigate("/resume")
+    }
   return (
     <>
     <Navbar />
@@ -59,7 +63,7 @@ const About = () => {
                 </div>
                </div>
                <div className='btn'>
-                <button><h6>RESUME</h6></button>
+                <button onClick={gotoresume}><h6>RESUME</h6></button>
                 <button><h6>CONTACT</h6></button>
                </div>
                 </div>
