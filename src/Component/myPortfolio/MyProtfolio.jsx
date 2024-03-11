@@ -8,6 +8,7 @@ import Myimage11 from "../Screenshot 2024-02-24 190249.png"
 import Myimage12 from "../Screenshot 2024-02-24 190220.png"
 import Myimage13 from "../Screenshot 2024-02-24 190158.png"
 import Myimage14 from "../Screenshot 2024-02-24 191115.png"
+import {motion} from "framer-motion"
 import Myimage15 from "../Screenshot 2024-02-24 191102.png"
 import Myimage16 from "../Screenshot 2024-02-24 191047.png"
 import Myimage17 from "../Screenshot 2024-02-24 191032.png"
@@ -37,6 +38,19 @@ import { GoDotFill } from "react-icons/go";
 
 import "./MyPortfolio.css"
 const MyProtfolio = () => {
+  const fadin = {
+    initial: {
+      opacity: 0,
+      y: 300,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.5,
+      },
+    },
+  };
   return (
     <>
     <Navbar />
@@ -45,22 +59,31 @@ const MyProtfolio = () => {
         <div className='mywebsite1'>
         <div className='about2'>
                <div className='myimages12345'>
-               <div className='aboutimg'>
+               <motion.div className='aboutimg' variants={fadin}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}>
                     <img src={my7} alt="" />
-                </div>
+                </motion.div>
                 <h4>PORTFOLIO</h4>
                </div>
-               <h3><GoDotFill className='icon' />inspiring selection</h3>
+               <motion.h3 variants={fadin}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}><GoDotFill className='icon' />inspiring selection</motion.h3>
             </div>
            
         </div>
     </div>
-    <div className='myphoto'>
+    <motion.div className='myphoto'variants={fadin}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}>
      <div className='myphoto1'>
      <h1>MY PORTFOLIO</h1>
       <h5>inspiring selection</h5>
      </div>
-    </div>
+    </motion.div>
     <div className='mysitesss'>
            <div className='mysite'>
               <div className='mysite1'>

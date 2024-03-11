@@ -7,6 +7,7 @@ import Myimage2 from "./portfolio1.jpg"
 import Myimage3 from "./contact.png"
 import { GoDotFill } from "react-icons/go";
 import { SiIndeed } from "react-icons/si";
+import {motion} from "framer-motion"
 import { FaLinkedinIn } from "react-icons/fa";
 import { LuSchool } from "react-icons/lu";
 import { BiSolidSchool } from "react-icons/bi";
@@ -33,10 +34,91 @@ const MyProfile = () => {
     function gotocontact(params) {
         navigates("/contact")
     }
+  
+    const fadin={
+        initial:{
+            opacity:0,
+            y:300
+        },
+        animate:{
+            opacity:1,
+            y:0,
+            transition:{
+                delay:0.5
+            }
+        }
+    }
+    const fadin5={
+        initial:{
+            opacity:0,
+            y:300
+        },
+        animate:{
+            opacity:1,
+            y:0,
+            transition:{
+                delay:0.5
+            }
+        }
+    }
+    
+    const fadin1={
+        initial:{
+            opacity:0,
+            y:-100
+        },
+        animate:{
+            opacity:1,
+            y:0,
+            transition:{
+                delay:0.10
+            }
+        }
+    }
+    const fadin2={
+        initial:{
+            opacity:0,
+            y:-100
+        },
+        animate:{
+            opacity:1,
+            y:0,
+            transition:{
+                delay:0.15
+            }
+        }
+    }
+    const fadin3={
+        initial:{
+            opacity:0,
+            y:100
+        },
+        animate:{
+            opacity:1,
+            y:0,
+            transition:{
+                delay:0.20
+            }
+        }
+    }
+    const fadin4={
+        initial:{
+            opacity:0,
+            y:100
+        },
+        animate:{
+            opacity:1,
+            y:0,
+            transition:{
+                delay:0.25
+            }
+        }
+    }
+  
   return (
     <>
     <Navbar />
-    <div className='myprofile'>
+    <motion.div className='myprofile' variants={fadin5} initial="initial" whileInView="animate" viewport={{once:true}} >
         <div className='links'>
         <a href="https://profile.indeed.com/?hl=en_IN&co=IN&from=gnav-messaging--messaging-webapp">
  <span> <SiIndeed className='socialmedia' /></span>
@@ -65,13 +147,13 @@ const MyProfile = () => {
         </a> 
         </div>
         <div className='myprofile1'>
-            <div className='myimages'>
+            <motion.div className='myimages' variants={fadin} initial="initial" whileInView="animate" viewport={{once:true}}>
 <img src={Myimage} alt="" />
 <h1 onClick={gotoabout}>ABOUT</h1>
-            </div>
+            </motion.div>
             <div className='mydata'>
-                <div className='mydata1'>
-                    <div className='Blog'>
+                <motion.div className='mydata1'>
+                    <motion.div className='Blog' variants={fadin1} initial="initial" whileInView="animate" viewport={{once:true}}>
                         <div className='title'>
    <h2><GoDotFill className='icon' />buzz burst</h2>
 
@@ -80,8 +162,8 @@ const MyProfile = () => {
 <img src={Myimage1} alt="" />
     </div>
     <h1 onClick={gotoportfolio}>PORTFOLIO</h1>
-                    </div>
-                    <div className='Education'>
+                    </motion.div>
+                    <motion.div className='Education' variants={fadin2} initial="initial" whileInView="animate" viewport={{once:true}}>
                     <div className='title'>
                     <h2><GoDotFill className='icon' />buzz burst</h2>
                     </div>
@@ -99,10 +181,10 @@ const MyProfile = () => {
                     </div></div>
     <h1 onClick={gotoedu}>EDUCATION</h1>
 
-                    </div>
-                </div>
-                <div className='mydata2'>
-                    <div className='portfolio'>
+                    </motion.div>
+                </motion.div>
+                <motion.div className='mydata2'>
+                    <motion.div className='portfolio' variants={fadin3} initial="initial" whileInView="animate" viewport={{once:true}}>
                     <div className='title'>
    <h2><GoDotFill className='icon' />buzz burst</h2>
 
@@ -114,8 +196,8 @@ const MyProfile = () => {
                         </div>
     <h1 onClick={gotoskills}>SKILLS</h1>
 
-                    </div>
-                    <div className='contact'>
+                    </motion.div>
+                    <motion.div className='contact'variants={fadin4} initial="initial" whileInView="animate" viewport={{once:true}}>
                     <div className='title'>
    <h2><GoDotFill className='icon' />buzz burst</h2>
 
@@ -126,11 +208,11 @@ const MyProfile = () => {
     </div> </div>
   <h1 onClick={gotocontact}>Hire Me</h1>
 
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </div>
         </div>
-    </div>
+    </motion.div>
     </>
   )
 }
