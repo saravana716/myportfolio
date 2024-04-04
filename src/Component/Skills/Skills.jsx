@@ -1,4 +1,6 @@
 import React from 'react'
+import {motion} from "framer-motion"
+import { fadein } from '../Motion'
 import Navbar from '../Navbar/Navbar'
 import my7 from "../IMG_20240223_162336.jpg"
 import sizeimg from "../html-5.png"
@@ -15,27 +17,42 @@ const Skills = () => {
     <Navbar />
     <div className='mywebsite'>
         <div className='mywebsite1'>
-        <div className='about2'>
-               <div className='myimages12345'>
+        <motion.div className='about2'variants={fadein("right",0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false,amount:0.7}}>
+               <div className='myimages12345'variants={fadein("up",0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false,amount:0.7}}>
                <div className='aboutimg'>
                     <img src={my7} alt="" />
                 </div>
                 <h4>SKILLS</h4>
                </div>
-               <h3><GoDotFill className='icon' />Skill Showcase</h3>
-            </div>
+               <h3 variants={fadein("up",0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false,amount:0.7}}><GoDotFill className='icon' />Skill Showcase</h3>
+            </motion.div>
            
         </div>
     </div>
-    <div className='myskills'>
+    <motion.div className='myskills'variants={fadein("up",0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false,amount:0.7}}>
         <div className='myskills1'>
     <h1>MY SKILLS</h1>
     <h5>I do all kinds of neat stuff</h5>
         </div>
-    </div>
+    </motion.div>
     <div className='myskillset'>
       <div className='myskillset1'>
-        <div className='myskillset2'>
+        <motion.div className='myskillset2'variants={fadein("right",0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false,amount:0.7}}>
           <button>HTML <p><span>01</span></p></button>
           <div className='boxsize'>
             <div className='boxsize1'>
@@ -43,8 +60,11 @@ const Skills = () => {
             </div>
           </div>
           <p>HTML serves as the foundation of web development, enabling the creation of structured and accessible content for websites.</p>
-        </div>
-        <div className='myskillset2'>
+        </motion.div>
+        <motion.div className='myskillset2'variants={fadein("left",0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false,amount:0.7}}>
           <button>CSS <p><span>02</span></p></button>
           <div className='boxsize'>
             <div className='boxsize1'>
@@ -60,8 +80,11 @@ const Skills = () => {
 
 
           </p>
-        </div>
-        <div className='myskillset2'>
+        </motion.div>
+        <motion.div className='myskillset2'variants={fadein("right",0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false,amount:0.7}}>
           <button>JAVASCRIPT <p><span>03</span></p></button>
           <div className='boxsize'>
             <div className='boxsize1'>
@@ -69,8 +92,11 @@ const Skills = () => {
             </div>
           </div>
 <p>
-JavaScript enables dynamic and interactive features on websites, such as form validation, animations, and real-time updates, enhancing user engagement and functionality.</p>        </div>
-        <div className='myskillset2'>
+JavaScript enables dynamic and interactive features on websites, such as form validation, animations, and real-time updates, enhancing user engagement and functionality.</p>        </motion.div>
+        <motion.div className='myskillset2'variants={fadein("left",0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false,amount:0.7}}>
           <button>REACT JS<p><span>04</span></p></button>
           <div className='boxsize'>
             <div className='boxsize1'>
@@ -78,8 +104,11 @@ JavaScript enables dynamic and interactive features on websites, such as form va
             </div>
           </div>
           <p>ReactJS streamlines the creation of user interfaces by breaking them into reusable components, making web development more efficient and scalable.</p>
-        </div>
-        <div className='myskillset2'>
+        </motion.div>
+        <motion.div className='myskillset2'variants={fadein("right",0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false,amount:0.7}}>
           <button>NODE JS<p><span>05</span></p></button>
           <div className='boxsize'>
             <div className='boxsize1'>
@@ -88,8 +117,11 @@ JavaScript enables dynamic and interactive features on websites, such as form va
           </div>
           <p>
 Node.js enables server-side JavaScript execution, facilitating the development of scalable and high-performance web applications with real-time capabilities.</p>
-        </div>
-        <div className='myskillset2'>
+        </motion.div>
+        <motion.div className='myskillset2' variants={fadein("left",0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false,amount:0.7}}>
           <button>FIGMA<p><span>06</span></p></button>
           <div className='boxsize'>
             <div className='boxsize1'>
@@ -97,7 +129,7 @@ Node.js enables server-side JavaScript execution, facilitating the development o
             </div>
           </div>
           <p>Figma simplifies the design and collaboration process for web developers by providing a user-friendly interface for creating and sharing design mockups and prototypes.</p>
-        </div>
+        </motion.div>
       </div>
     </div>
     </>

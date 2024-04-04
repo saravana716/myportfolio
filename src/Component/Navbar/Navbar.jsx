@@ -53,17 +53,32 @@ const fadin1={
         <div className='navbar1'>
         <GiHamburgerMenu className='burgermenu' onClick={movelistcon} />
         <IoCloseCircle className='closemenu' onClick={movelistcon1} />
-            <motion.h1 variants={fadin} initial="initial" whileInView="animate" viewport={{once:true}}>SARAVANAPRIYAN.</motion.h1>
+            <h1  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="500">SARAVANAPRIYAN.</h1>
             <div className='list'>
-           <motion.div className='list1'variants={fadin1} initial="initial" whileInView="animate" viewport={{once:true}}>
+           <div className='list1'variants={fadin1} initial="initial" whileInView="animate" viewport={{once:true}}>
     
-           <Link to="/home"><h4 className='active'>Home</h4></Link>
-            <Link to="/about"><h4>About Me</h4></Link>
-            <Link to="/portfolio"><h4>Portfolio</h4></Link>
-            <Link to="/skills"><h4>Skills</h4></Link>
-            <Link to="/education"><h4>Education</h4></Link>
-            <Link to="/contact"><h4>Hire me</h4></Link>
-           </motion.div> </div>
+           <Link to="/home" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="550"><h4 className='active' >Home</h4></Link>
+            <Link to="/about" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="650"><h4>About Me</h4></Link>
+            <Link to="/portfolio" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="750"><h4>Portfolio</h4></Link>
+            <Link to="/skills" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="850"><h4>Skills</h4></Link>
+            <Link to="/education" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="950"><h4>Education</h4></Link>
+            <Link to="/contact" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1050"><h4>Hire me</h4></Link>
+           </div> </div>
         </div>
     </div>
     </>

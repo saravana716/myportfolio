@@ -29,8 +29,10 @@ const About = () => {
       <div className="about">
         <div className="about1">
           <div className="about2">
-            <div className="myimages12345">
-              <motion.div
+            <div className="myimages12345"  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+              <div
                 className="aboutimg"
                 variants={fadin}
                 initial="initial"
@@ -38,24 +40,22 @@ const About = () => {
                 viewport={{ once: true }}
               >
                 <img src={Myimage8} alt="" />
-              </motion.div>
+              </div>
               <h4>ABOUT US</h4>
             </div>
-            <motion.h3
-              variants={fadin}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
+            <h3
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
             >
               <GoDotFill className="icon" />
               biography & abilities
-            </motion.h3>
+            </h3>
           </div>
           <div className="aboutme">
-            <motion.div className="mycontent" variants={fadin}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}>
+            <div className="mycontent" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"
+     data-aos-duration="800">
               <div className="aboutme1">
                 <h1>Saravanapriyan</h1>
                 <h5>FullStackDevelopher</h5>
@@ -63,11 +63,10 @@ const About = () => {
               <div className="aboutimages">
                 <img src={Myimage8} alt="" />
               </div>
-            </motion.div>
-            <motion.div className="mycontent1" variants={fadin}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}>
+            </div>
+            <div className="mycontent1" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"
+     data-aos-duration="800">
               <h2>
                 I'M SARAVANAPRIYAN, A SKILLED AND INNOVATIVE FULLSTACK
                 DEVELOPHER. MY EXPERTISE LIES IN CREATING INTUITIVE AND VISUALLY
@@ -108,7 +107,7 @@ const About = () => {
                   <h6>CONTACT</h6>
                 </button>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
