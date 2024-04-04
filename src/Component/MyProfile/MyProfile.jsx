@@ -118,65 +118,42 @@ const MyProfile = () => {
   return (
     <>
     <Navbar />
-    <div className='myprofile' variants={fadin5} initial="initial" whileInView="animate" viewport={{once:true}} >
+    <motion.div className='myprofile' variants={fadin5} initial="initial" whileInView="animate" viewport={{once:true}} >
         <div className='links'>
         <a href="https://profile.indeed.com/?hl=en_IN&co=IN&from=gnav-messaging--messaging-webapp">
- <span data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="500"> <SiIndeed className='socialmedia'  /></span>
+ <span> <SiIndeed className='socialmedia' /></span>
 
         </a>
 
 <a href="https://www.linkedin.com/in/saravanapriyan-v-796533274/">
-<span data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="500"><FaLinkedinIn  className='socialmedia'/></span>
+<span><FaLinkedinIn  className='socialmedia'/></span>
 
 </a>
 
         <a href="https://www.instagram.com/saravanan.va_7/">
-        <span data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="600"><FaInstagram className='socialmedia'/></span>
+        <span><FaInstagram className='socialmedia'/></span>
 
         </a>
         <a href="https://twitter.com/vsaravana716">
-        <span data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="800"><FaXTwitter className='socialmedia'/></span>
+        <span><FaXTwitter className='socialmedia'/></span>
 
         </a>
         <a href="https://www.facebook.com/profile.php?id=61556836677405">
-       <span data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="1000"> <FaFacebookF className='socialmedia'/></span>
+       <span> <FaFacebookF className='socialmedia'/></span>
 
         </a>
        <a href="https://wa.me/9342508799/?text=Enquiry">
-       <span data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="1200"><FaWhatsapp className='socialmedia'/></span>
+       <span><FaWhatsapp className='socialmedia'/></span>
         </a> 
         </div>
         <div className='myprofile1'>
-            <div className='myimages' data-aos="fade-right"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="800">
+            <motion.div className='myimages' variants={fadin} initial="initial" whileInView="animate" viewport={{once:true}}>
 <img src={Myimage} alt="" />
 <h1 onClick={gotoabout}>ABOUT</h1>
-            </div>
+            </motion.div>
             <div className='mydata'>
-                <div className='mydata1'>
-                    <div className='Blog'data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                <motion.div className='mydata1'>
+                    <motion.div className='Blog' variants={fadin1} initial="initial" whileInView="animate" viewport={{once:true}}>
                         <div className='title'>
    <h2><GoDotFill className='icon' />buzz burst</h2>
 
@@ -185,10 +162,8 @@ const MyProfile = () => {
 <img src={Myimage1} alt="" />
     </div>
     <h1 onClick={gotoportfolio}>PORTFOLIO</h1>
-                    </div>
-                    <div className='Education'data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                    </motion.div>
+                    <motion.div className='Education' variants={fadin2} initial="initial" whileInView="animate" viewport={{once:true}}>
                     <div className='title'>
                     <h2><GoDotFill className='icon' />buzz burst</h2>
                     </div>
@@ -206,12 +181,10 @@ const MyProfile = () => {
                     </div></div>
     <h1 onClick={gotoedu}>EDUCATION</h1>
 
-                    </div>
-                </div>
-                <div className='mydata2'>
-                    <div className='portfolio' data-aos="flip-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                    </motion.div>
+                </motion.div>
+                <motion.div className='mydata2'>
+                    <motion.div className='portfolio' variants={fadin3} initial="initial" whileInView="animate" viewport={{once:true}}>
                     <div className='title'>
    <h2><GoDotFill className='icon' />buzz burst</h2>
 
@@ -223,10 +196,8 @@ const MyProfile = () => {
                         </div>
     <h1 onClick={gotoskills}>SKILLS</h1>
 
-                    </div>
-                    <div className='contact' data-aos="flip-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                    </motion.div>
+                    <motion.div className='contact'variants={fadin4} initial="initial" whileInView="animate" viewport={{once:true}}>
                     <div className='title'>
    <h2><GoDotFill className='icon' />buzz burst</h2>
 
@@ -237,11 +208,11 @@ const MyProfile = () => {
     </div> </div>
   <h1 onClick={gotocontact}>Hire Me</h1>
 
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </div>
         </div>
-    </div>
+    </motion.div>
     </>
   )
 }

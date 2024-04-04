@@ -1,6 +1,4 @@
 import React from 'react'
-import {motion} from "framer-motion"
-import { fadein } from '../Motion'
 import Navbar from '../Navbar/Navbar'
 import my7 from "../IMG_20240223_155412.jpg"
 import Myimage8 from "../Screenshot 2024-02-24 190347.png"
@@ -10,6 +8,7 @@ import Myimage11 from "../Screenshot 2024-02-24 190249.png"
 import Myimage12 from "../Screenshot 2024-02-24 190220.png"
 import Myimage13 from "../Screenshot 2024-02-24 190158.png"
 import Myimage14 from "../Screenshot 2024-02-24 191115.png"
+import {motion} from "framer-motion"
 import Myimage15 from "../Screenshot 2024-02-24 191102.png"
 import Myimage16 from "../Screenshot 2024-02-24 191047.png"
 import Myimage17 from "../Screenshot 2024-02-24 191032.png"
@@ -39,42 +38,48 @@ import { GoDotFill } from "react-icons/go";
 
 import "./MyPortfolio.css"
 const MyProtfolio = () => {
-
+  const fadin = {
+    initial: {
+      opacity: 0,
+      y: 300,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.5,
+      },
+    },
+  };
   return (
     <>
     <Navbar />
     
     <div className='mywebsite'>
         <div className='mywebsite1'>
-        <motion.div className='about2' variants={fadein("up",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}>
-               <div className='myimages12345' variants={fadein("up",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}>
-               <div className='aboutimg' >
+        <div className='about2'>
+               <div className='myimages12345'>
+               <motion.div className='aboutimg' variants={fadin}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}>
                     <img src={my7} alt="" />
-                </div>
+                </motion.div>
                 <h4>PORTFOLIO</h4>
                </div>
-               <h3 variants={fadein("up",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}><GoDotFill className='icon' />inspiring selection</h3>
-            </motion.div>
+               <motion.h3 variants={fadin}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}><GoDotFill className='icon' />inspiring selection</motion.h3>
+            </div>
            
         </div>
     </div>
-    <motion.div className='myphoto'variants={fadein("up",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}>
-     <div className='myphoto1'variants={fadein("up",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}>
+    <motion.div className='myphoto'variants={fadin}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}>
+     <div className='myphoto1'>
      <h1>MY PORTFOLIO</h1>
       <h5>inspiring selection</h5>
      </div>
@@ -82,10 +87,7 @@ const MyProtfolio = () => {
     <div className='mysitesss'>
            <div className='mysite'>
               <div className='mysite1'>
-                <motion.div className='mysite2'variants={fadein("left",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}>
+                <div className='mysite2'>
                   <div className='slide'>
                   <div className='slide1'>
                       <img src={Myimage8} alt="" />
@@ -106,11 +108,8 @@ const MyProtfolio = () => {
                     <button><h6>GOTO VIEW</h6></button>
                     </a>
                   </div>
-                </motion.div>
-                <motion.div className='mysite2' variants={fadein("left",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}>
+                </div>
+                <div className='mysite2'>
                   <div className='slide'>
                   <div className='slide1'>
                       <img src={Myimage14} alt="" />
@@ -131,11 +130,8 @@ const MyProtfolio = () => {
 
                     </a>
                   </div>
-                </motion.div>
-                <motion.div className='mysite2'variants={fadein("left",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}>
+                </div>
+                <div className='mysite2'>
                   <div className='slide'>
                   <div className='slide1'>
                       <img src={Myimage20} alt="" />
@@ -156,11 +152,8 @@ const MyProtfolio = () => {
 
                     </a>
                   </div>
-                </motion.div>
-                <motion.div className='mysite2'variants={fadein("right",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}>
+                </div>
+                <div className='mysite2'>
                   <div className='slide'>
                   <div className='slide1'>
                       <img src={Myimage25} alt="" />
@@ -178,11 +171,8 @@ const MyProtfolio = () => {
                     </div>
 <a href="https://saravanan-flone-ecommerce.netlify.app/"> <button><h6>GOTO VIEW</h6></button></a>
                   </div>
-                </motion.div>
-                <motion.div className='mysite2' variants={fadein("right",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}>
+                </div>
+                <div className='mysite2'>
                   <div className='slide'>
                   <div className='slide1'>
                       <img src={Myimage30} alt="" />
@@ -200,11 +190,8 @@ const MyProtfolio = () => {
                     </div>
                     <a href="https://saravanan-wootstock-portfolio.netlify.app/"><button><h6>GOTO VIEW</h6></button></a>
                   </div>
-                </motion.div>
-                <motion.div className='mysite2'variants={fadein("right",0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7}}>
+                </div>
+                <div className='mysite2'>
                   <div className='slide'>
                   <div className='slide1'>
                       <img src={Myimage35} alt="" />
@@ -225,7 +212,7 @@ const MyProtfolio = () => {
 
                     </a>
                   </div>
-                </motion.div>
+                </div>
                 
               </div>
             </div>
