@@ -64,9 +64,7 @@ const About = () => {
                 <img src={Myimage8} alt="" />
               </div>
             </div>
-            <div className="mycontent1" data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom"
-     data-aos-duration="800">
+            <div className="mycontent1">
               <h2>
                 I'M SARAVANAPRIYAN, A SKILLED AND INNOVATIVE FULLSTACK
                 DEVELOPHER. MY EXPERTISE LIES IN CREATING INTUITIVE AND VISUALLY

@@ -1,8 +1,8 @@
 import React from 'react'
 import "./myresume.css"
 import { useRef } from 'react'
-import re1 from "./myresume2022-images-1.jpg"
-import re2 from "./myresume2022-images-2.jpg"
+import re1 from "./saravanapriyan-resume_page-0001.jpg"
+import re2 from "./saravanapriyan-resume_page-0002.jpg"
 import re3 from "./myresume2022-images-3.jpg"
 import { useReactToPrint } from 'react-to-print'
 import mylogoimg from "../MyProfile/1706350975544.png"
@@ -25,13 +25,13 @@ const Myresume = () => {
    <div className='resume2'>
    <img src={re2} alt="" />
    </div>
-   <div className='resume2'>
-   <img src={re3} alt="" />
-   </div>
+  
   </div>
-          
+  <div className='btn'>
+          <button><h6>Print</h6></button>
+        </div>  
         </div>
-        <button onClick={handleprint}>print to pdf</button>
+       
   
     </>
   )
