@@ -23,6 +23,10 @@ const About = () => {
       },
     },
   };
+
+  function gotocontact(params) {
+    resumenavigate("/contact")
+  }
   return (
     <>
       <Navbar />
@@ -102,7 +106,7 @@ const About = () => {
                   <h6>RESUME</h6>
                 </button>
                 <button>
-                  <h6>CONTACT</h6>
+                  <h6 onClick={gotocontact}>CONTACT</h6>
                 </button>
               </div>
             </div>

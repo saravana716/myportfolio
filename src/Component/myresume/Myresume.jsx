@@ -6,6 +6,7 @@ import re2 from "./new-resume2024_page-0002.jpg"
 import re3 from "./myresume2022-images-3.jpg"
 import { useReactToPrint } from 'react-to-print'
 import mylogoimg from "../MyProfile/1706350975544.png"
+import Navbar from '../Navbar/Navbar'
 const Myresume = () => {
     const myref= useRef()
     const handleprint = useReactToPrint({
@@ -16,7 +17,7 @@ const Myresume = () => {
 
   return (
     <>
-   
+   <Navbar/>
         <div className='resume10'ref={myref}>
   <div className='res12'>
   <div className='resume2'>
