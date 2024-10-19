@@ -53,7 +53,7 @@ const fadin1={
         <div className='navbar1'>
         <GiHamburgerMenu className='burgermenu' onClick={movelistcon} />
         <IoCloseCircle className='closemenu' onClick={movelistcon1} />
-            <motion.h1 variants={fadin} initial="initial" whileInView="animate" viewport={{once:true}}>SARAVANAPRIYAN.</motion.h1>
+            <h1 variants={fadin} initial="initial" whileInView="animate" viewport={{once:true}}>SARAVANAPRIYAN.</h1>
             <div className='list'>
            <motion.div className='list1'variants={fadin1} initial="initial" whileInView="animate" viewport={{once:true}}>
     

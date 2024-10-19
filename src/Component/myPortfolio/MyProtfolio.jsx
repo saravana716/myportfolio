@@ -34,6 +34,30 @@ import Myimage36 from "../Screenshot 2024-02-24 222839.png"
 import Myimage37 from "../Screenshot 2024-02-24 222823.png"
 import Myimage38 from "../Screenshot 2024-02-24 222809 - Copy.png"
 import Myimage39 from "../Screenshot 2024-02-24 222744 - Copy.png"
+import Myimage40 from "../Screenshot 2024-10-20 001858.png"
+import Myimage41 from "../Screenshot 2024-10-20 002050.png"
+import Myimage42 from "../Screenshot 2024-10-20 002150.png"
+import Myimage43 from "../Screenshot 2024-10-20 002115.png"
+import Myimage44 from "../Screenshot 2024-10-20 002306.png"
+import Myimage45 from "../Screenshot 2024-10-20 003500.png"
+import Myimage46 from "../Screenshot 2024-10-20 003521.png"
+import Myimage47 from "../Screenshot 2024-10-20 003607.png"
+import Myimage48 from "../Screenshot 2024-10-20 003854.png"
+import Myimage49 from "../Screenshot 2024-10-20 003909.png"
+import Myimage50 from "../Screenshot 2024-10-20 003954.png"
+import Myimage51 from "../Screenshot 2024-10-20 004011.png"
+import Myimage52 from "../Screenshot 2024-10-20 004042.png"
+import Myimage53 from "../Screenshot 2024-10-20 004152.png"
+import Myimage54 from "../Screenshot 2024-10-20 004305.png"
+import Myimage55 from "../Screenshot 2024-10-20 004321.png"
+import Myimage56 from "../Screenshot 2024-10-20 004351.png"
+import Myimage57 from "../Screenshot 2024-10-20 004455.png"
+import Myimage58 from "../Screenshot 2024-10-20 004656.png"
+import Myimage59 from "../Screenshot 2024-10-20 004747.png"
+import Myimage60 from "../Screenshot 2024-10-20 004806.png"
+import Myimage62 from "../Screenshot 2024-10-20 004839.png"
+import Myimage63 from "../Screenshot 2024-10-20 004901.png"
+
 import { GoDotFill } from "react-icons/go";
 
 import "./MyPortfolio.css"
@@ -213,7 +237,117 @@ const MyProtfolio = () => {
                     </a>
                   </div>
                 </div>
-                
+                <div className='mysite2'>
+                  <div className='slide'>
+                  <div className='slide1'>
+                      <img src={Myimage40} alt="" />
+                      <img src={Myimage41} alt="" />
+                      <img src={Myimage42} alt="" />
+                      <img src={Myimage43} alt="" />
+                      <img src={Myimage44} alt="" />
+                      <img src={Myimage42} alt="" />
+                      <img src={Myimage41} alt="" />
+                      <img src={Myimage42} alt="" />
+                    </div>
+                    <div className='protitle'>
+                      <h1><GoDotFill className='icon' />Job Form validation</h1>
+                      <h3><GoDotFill className='icon' />Ecommerce</h3>
+                    </div>
+                    <a href="https://jopportal.vercel.app/">
+                    <button><h6>GOTO VIEW</h6></button>
+
+                    </a>
+                  </div>
+                </div>
+                <div className='mysite2'>
+                  <div className='slide'>
+                  <div className='slide1'>
+                      <img src={Myimage45} alt="" />
+                      <img src={Myimage46} alt="" />
+                      <img src={Myimage47} alt="" />
+                      <img src={Myimage45} alt="" />
+                      <img src={Myimage46} alt="" />
+                      <img src={Myimage47} alt="" />
+                      <img src={Myimage45} alt="" />
+                      <img src={Myimage46} alt="" />
+                    </div>
+                    <div className='protitle'>
+                      <h1><GoDotFill className='icon' />Filter Method</h1>
+                      <h3><GoDotFill className='icon' />Ecommerce</h3>
+                    </div>
+                    <a href="https://addtocart-one.vercel.app/">
+                    <button><h6>GOTO VIEW</h6></button>
+
+                    </a>
+                  </div>
+                </div>
+                <div className='mysite2'>
+                  <div className='slide'>
+                  <div className='slide1'>
+                      <img src={Myimage48} alt="" />
+                      <img src={Myimage49} alt="" />
+                      <img src={Myimage50} alt="" />
+                      <img src={Myimage51} alt="" />
+                      <img src={Myimage52} alt="" />
+                      <img src={Myimage53} alt="" />
+                      <img src={Myimage48} alt="" />
+                      <img src={Myimage49} alt="" />
+                    </div>
+                    <div className='protitle'>
+                      <h1><GoDotFill className='icon' />Yellovae Crackers</h1>
+                      <h3><GoDotFill className='icon' />Ecommerce</h3>
+                    </div>
+                    <a href="https://www.sivakasiyellovaecrackers.com/">
+                    <button><h6>GOTO VIEW</h6></button>
+
+                    </a>
+                  </div>
+                </div>
+                <div className='mysite2'>
+                  <div className='slide'>
+                  <div className='slide1'>
+                      <img src={Myimage54} alt="" />
+                      <img src={Myimage55} alt="" />
+                      <img src={Myimage56} alt="" />
+                      <img src={Myimage57} alt="" />
+                      <img src={Myimage54} alt="" />
+                      <img src={Myimage55} alt="" />
+                      <img src={Myimage56} alt="" />
+                      <img src={Myimage57} alt="" />
+                    </div>
+                    <div className='protitle'>
+                      <h1><GoDotFill className='icon' />Nammaoore Crackers</h1>
+                      <h3><GoDotFill className='icon' />Ecommerce</h3>
+                    </div>
+                    <a href="https://www.nammaoorcrackersz.com/">
+                    <button><h6>GOTO VIEW</h6></button>
+
+                    </a>
+                  </div>
+                </div>
+                <div className='mysite2'>
+                  <div className='slide'>
+                  <div className='slide1'>
+                      <img src={Myimage58} alt="" />
+                      <img src={Myimage59} alt="" />
+                      <img src={Myimage60} alt="" />
+                      <img src={Myimage58} alt="" />
+                      <img src={Myimage62} alt="" />
+                      <img src={Myimage63} alt="" />
+                      <img src={Myimage58} alt="" />
+                      <img src={Myimage59} alt="" />
+                    </div>
+                    <div className='protitle'>
+                      <h1><GoDotFill className='icon' />Vimix</h1>
+                      <h3><GoDotFill className='icon' />Ecommerce</h3>
+                    </div>
+                    <a href="https://www.vimix.app/">
+                    <button><h6>GOTO VIEW</h6></button>
+
+                    </a>
+                  </div>
+                </div>
+               
               </div>
             </div>
            </div>
