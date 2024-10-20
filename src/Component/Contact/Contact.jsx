@@ -265,8 +265,9 @@ const Contact = () => {
                             <input type="tel" name="" id="" placeholder='Phone'/>
                         </div>
                         <textarea name="message" id="" cols="30" rows="10"></textarea>
-                    <button type="submit"><h6>CONTACT</h6></button>
-                    </form>
+<div className='trbtn'>
+<button type="submit"><h6>CONTACT</h6></button>
+</div>                    </form>
                 </div>
             </div>
         </div>

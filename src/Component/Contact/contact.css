@@ -237,6 +237,7 @@ grid-gap: 20px;
         margin: 30px 0px 0px 0px;
         display: flex;
         flex-direction: column;
+   
     }
     .fname{
         width: 100%;
@@ -317,6 +318,7 @@ grid-gap: 20px;
         border: 2px solid gray;
         margin-top:10px;
         transition: 0.7s;
+        text-align: start;
     }
     .spcontact6 button h6{
         width: 100%;
@@ -691,6 +693,7 @@ grid-gap: 20px;
                 border: 1px solid #36373c;
                 border-radius: 6px;
                 margin: 15px 0px;
+                width: 100%;
                 transition: 0.7s;
                 background-color: #1a1b20;
                 color: white;
